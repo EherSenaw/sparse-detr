@@ -54,6 +54,7 @@ def compute_fps(model, dataset, num_iters=300, warm_iters=5, batch_size=4):
 def compute_gflops(model, dataset, approximated=True):
     print(f"computing flops.. (approximated={approximated})")
     model.eval()
+    return 0
     python_ops_mode_for_deform_attn(model, True)
     if approximated:
         # use just a single image to approximate the full compuation
