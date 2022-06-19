@@ -16,6 +16,7 @@ import torch
 
 
 CONFIG_MAP = {
+    "swin-n": "models/swin_transformer/configs/swin_nano_patch4_window7_224.yaml",
     "swin-t": "models/swin_transformer/configs/swin_tiny_patch4_window7_224.yaml",
     "swin-s": "models/swin_transformer/configs/swin_small_patch4_window7_224.yaml",
     "swin-b": "models/swin_transformer/configs/swin_base_patch4_window7_224.yaml",
@@ -24,7 +25,9 @@ CONFIG_MAP = {
 
 
 CHECKPOINT_MAP = {
-    "swin-t": "/data/public/rw/team-autolearn/pretrainedmodels/swin/swin_tiny_patch4_window7_224.pth",
+#"swin-t": "/data/public/rw/team-autolearn/pretrainedmodels/swin/swin_tiny_patch4_window7_224.pth",
+    "swin-n": "https://github.com/naver-ai/vidt/releases/download/v0.1-swin/swin_nano_patch4_window7_224.pth",
+    "swin-t": "https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth",
 }
 
 
